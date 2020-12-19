@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'addition-project';
-  num1:number=2;
-  num2:number=4;
+  num1:number=0;
+  num2:number=0;
   total:number=0;
   constructor(){}
 

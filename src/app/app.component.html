@@ -4,16 +4,37 @@
   <button class="btn btn-primary" type="button" (click)="add()">Add</button>
   <h3>Addition is: {{total}}</h3> -->
 
-  <div class="form-group">
-    <label for="num1">Number1</label>
-    <input id="num1" class="form-control" type="number">
+  <div class="row rowmid justify-content-center align-items-center">
+    <div class="col-md-3"></div>
 
-    <label for="num2">Number2</label>
-    <input id="num2" class="form-control" type="number">
+    <div class="col-md-6">
 
-    <input type="button" value="Add" (click)="add()">
+      <div class="card text-white bg-dark border-danger" >
+        <div class="card-header lead text-center">Addition of two numbers</div>
+        <div class="card-body">
+
+          <div class="form-group">
+            <label for="num1">Number1</label>
+            <input id="num1" class="form-control" type="number" [(ngModel)]="num1">
+
+            <label for="num2">Number2</label>
+            <input id="num2" class="form-control" type="number" [(ngModel)]="num2">
+            <br>
+            <input type="button" value="Add" class="btn btn-primary btn-block" (click)="add()">
+          </div>
+          <div class="card-footer lead">
+            Addition is {{total}}
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="col-md-3"></div>
   </div>
 
-  <h3>Addition is {{total}}</h3>
 
 </div>
